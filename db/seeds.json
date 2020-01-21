@@ -1,0 +1,23 @@
+[
+    {
+        "name": "French Cherry Dessert",
+        "ingredients": 
+        "1 lb. crushed graham crackers, 1 1/2 sticks melted butter, 2 Tbsp. sugar, 2 pkg. Dream Whip, 1 1/2 c. powdered sugar, 1 large pkg. cream cheese, 2 cans cherry pie filling",
+        "instructions":
+        "Mix cracker crumbs, melted butter and sugar together. Press into bottom of 13 x 9 x 2-inch pan. Bake at 350° for 8 minutes. Set aside to cool. Mix Dream Whip. Mix powdered sugar with cream cheese, which has been softened to room temperature. Blend Dream Whip with cream cheese mixture. Spread over cracker crumb crust and top with cherry pie filling. Chill."
+    },
+    {
+        "name": "Apple Nut Dessert",
+        "ingredients":
+        "1 c. sugar, 4 c. sifted flour, 2 tsp. baking powder, 1 Tbsp. softened shortening, 1/2 c. evaporated milk, 1 tsp. vanilla, 3 c. chopped, peeled apples, 1/2 c. broken nutmeats, 2 Tbsp. brown sugar, 2 Tbsp. softened butter, 1/3 c. flour",
+        "instructions":
+        "Mix sugar, sifted flour, baking powder, shortening, evaporated milk and vanilla with a fork until well blended. Stir in chopped apples and nuts until well coated with batter. Spread evenly in greased 9-inch pan. Combine brown sugar, softened butter and the 1/3 cup flour; sprinkle over apple mixture in pan. Bake in 400° oven for 30 to 35 minutes, until top is golden brown. Serve with cream or ice cream."
+    },
+    {
+        "name": "Arequipe Dessert",
+        "ingredients":
+        "3 qt. milk, 2 lb. sugar, pinch of salt, 1/4 tsp. baking soda, 2 egg yolks, cinnamon stick",
+        "instructions":
+        "Combine ingredients in a saucepan and simmer until thickened. Stir constantly, preferably with a wooden spoon, until you see the saucepan while stirring (4 to 5 hours). Add the egg yolks and let cook 2 or 3 minutes longer. Remove cinnamon stick. Let cool. This recipe must be watched constantly."
+    }
+]
