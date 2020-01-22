@@ -2,22 +2,50 @@ import React, { Component } from 'react';
 import '../App.css'; 
 
 class Recipes extends Component {
+    constructor() {
+        super()
+        this.state = {
+            name: [],
+            ingredients: [],
+            instructions: []
+        }
+    }
 
     getData = () => {
-        let url = "mongodb://localhost/recipes"
-        fetch(url, {
-        method: 'get'
-    })
+        // let proxyUrl = "https://cors-anywhere.herokuapp.com/" 
+        let targetUrl = ("http://localhost:4000/recipes")
+        // "mongodb://localhost/recipes" 
+        fetch(targetUrl)
         .then(res => res.json())
         .then(recipes => {
-            console.log(recipes);
-    })}
+            console.log(recipes);          
+            
+            const recipesArr = recipes.map(item => {
+                console.log(item);
+                return (
+                    <>
+                    <h1> {item.name} </h1>
+                    <p> {item.ingredients} </p>
+                    <p> {item.instructions} </p>
+                    </>
+                )
+                // this.setState({ name: item.name })
+                // this.setState({ ingredients: item.ingredients })
+                // this.setState({ instructions: item.instructions })
+            })
+    })
+}
+
     render() {
         return (
+
             <div>
-               <button onClick={() => this.getData}> Get Recipes </button>
-                   
+               <button onClick={() => this.getData()}> Get Recipes </button> 
+               <div> {recipesArr} </div>
                
+                {/* <h1>{this.state.name}</h1>
+                <p>{this.state.ingredients}</p>
+                <p>{this.state.instructions}</p> */}
             </div>
         )
     }
