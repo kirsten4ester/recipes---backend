@@ -4,7 +4,8 @@
   "description": "MERN lab using React &amp; Express",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node_modules/.bin/mocha",
+    "dev": "nodemon app.js"
   },
   "repository": {
     "type": "git",
@@ -17,8 +18,11 @@
   },
   "homepage": "https://github.com/kirsten4ester/recipes#readme",
   "dependencies": {
+    "chai": "^4.2.0",
     "cors": "^2.8.5",
     "express": "^4.17.1",
-    "mongoose": "^5.8.9"
+    "mocha": "^7.0.0",
+    "mongoose": "^5.8.9",
+    "supertest": "^4.0.2"
   }
 }

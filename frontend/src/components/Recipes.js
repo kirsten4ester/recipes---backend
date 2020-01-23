@@ -5,6 +5,7 @@ class Recipes extends Component {
     constructor() {
         super()
         this.state = {
+            recipes: [],
             name: [],
             ingredients: [],
             instructions: []
@@ -13,7 +14,7 @@ class Recipes extends Component {
 
     getData = () => {
         // let proxyUrl = "https://cors-anywhere.herokuapp.com/" 
-        let targetUrl = ("http://localhost:4000/recipes")
+        let targetUrl = ("http://localhost:5000/recipes")
         // "mongodb://localhost/recipes" 
         fetch(targetUrl)
         .then(res => res.json())
@@ -22,6 +23,7 @@ class Recipes extends Component {
             
             const recipesArr = recipes.map(item => {
                 console.log(item);
+                
                 return (
                     <>
                     <h1> {item.name} </h1>
@@ -33,15 +35,15 @@ class Recipes extends Component {
                 // this.setState({ ingredients: item.ingredients })
                 // this.setState({ instructions: item.instructions })
             })
+            this.setState({recipes: recipesArr})
     })
 }
 
     render() {
         return (
-
             <div>
                <button onClick={() => this.getData()}> Get Recipes </button> 
-               <div> {recipesArr} </div>
+               <div> {this.state.recipes} </div>
                
                 {/* <h1>{this.state.name}</h1>
                 <p>{this.state.ingredients}</p>
